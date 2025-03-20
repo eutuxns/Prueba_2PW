@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo Eléctrico de la Planta</title>
+    <link rel="stylesheet" href="css/Primera_pagina.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>Mantenimiento Forvia</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Regresar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección principal -->
+    <div class="main-section">
+        <!-- Cuadro blanco con contenido -->
+        <div class="content-box">
+            <!-- Columna izquierda (botón, texto y botones) -->
+            <div class="left-column">
+                <button id="selectFileButton">Seleccionar Archivo</button>
+                <p id="fileStatus">Ningún archivo seleccionado</p>
+                <!-- Input de archivo oculto -->
+                <input type="file" id="upload" accept=".xlsx, .xls" style="display: none;" />
+
+                <!-- Botones dentro del cuadro blanco -->
+                <div class="buttons-container">
+                    <button id="verPlantaCompleta" disabled>Ver Nave 1</button>
+                    <div class="dropdown">
+                        <button id="dropdownButton" disabled>Ver por sección</button>
+                        <div id="dropdownContent" class="dropdown-content">
+                            <a href="opc_1.html">Nave 2</a>
+                            <a href="opc_2.html">Opcion 2</a>
+                            <a href="opc_3.html">Opción 3</a>
+                            <a href="opc_4.html">Opción 4</a>
+                            <a href="opc_5.html">Opción 5</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha (video) -->
+            <div class="right-column">
+                <video id="videoPlayer" autoplay loop muted>
+                    <source src="Video_Witty_saludando.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/pagina_1.js"></script> <!-- Enlace al archivo específico -->
+</body>
+</html>
